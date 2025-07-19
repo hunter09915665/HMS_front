@@ -1,0 +1,25 @@
+.sales-history-container {
+  padding: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.sales-history-container h2 {
+  margin-bottom: 20px;
+}
+
+.sales-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.sales-table th, .sales-table td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.sales-table th {
+  background-color: #f0f0f0;
+}

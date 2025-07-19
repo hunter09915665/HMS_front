@@ -1,0 +1,126 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.dashboardLayout {
+  display: flex;
+  height: 100vh;
+  background-color: #121212; /* Dark mode */
+  color: white;
+}
+
+/* Sidebar takes fixed width */
+.sidebar {
+  width: 250px;
+  background-color: #1f1f1f;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* Right Panel contains header + content */
+.rightPanel {
+  margin-left: 250px; /* same as sidebar width */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Header at the top */
+.header {
+  height: 60px;
+  background-color: #1e1e2f;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Content area under header */
+.mainContent {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #181818;
+}
+
+/* DARK THEME */
+.dark {
+  background-color: #121212;
+  color: white;
+}
+
+.dark .Header,
+.dark .sidebar,
+.dark .maincontent {
+  background-color: #1f1f1f;
+  color: white;
+}
+
+/* LIGHT THEME */
+.light .sidebar {
+  background-color: #fff;
+  color: #333;
+}
+
+.light .sidebar-link {
+  color: #333;
+  background-color: #fff;
+}
+
+.light .sidebar-link.active,
+.light .sidebar-link:hover {
+  background-color: #e0e0e0;
+  color: #111;
+}
+.light .header,
+.light .sidebar,
+.light .main-content {
+  background-color: #f3f5ef;
+  color: #333;
+}
+
+/* Header, Sidebar, and Main Content should inherit from parent */
+.header, .sidebar, .mainContent {
+  padding: 20px;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,130 @@
+/* Sidebar.css */
+body{
+  font-family: 'Roboto' ,sans-serif;
+  background-color: #fbfeff;
+}
+
+
+.sidebar {
+ position: fixed;
+ flex-direction: column;
+
+ left: 0;
+ width: 250px;
+ height: 100%;
+ background: #0c1d46;
+}
+
+.sidebar header{
+  font-size: 30px;
+  color: rgb(234, 226, 226);
+  border-radius: 20px;
+  text-align: center;
+  line-height: 70px;
+  background: #ed0754;
+  user-select: none;
+  box-sizing: border-box;
+  transition: .4s;
+}
+
+.sidebar ul a{
+  display: block;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  line-height: 200px;
+  font-size: 40px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255, 255, 255,.1);
+  border-bottom: 1px solid black;
+  transition: .4s;
+}
+
+ul li:hover a{
+  padding-left: 20px;
+  height: 100px;
+ 
+ 
+}
+
+.sidebar ul a i
+
+.brand-name {
+  padding: 1rem;
+  border-bottom: 1px solid #6c757d;
+  text-align: center;
+  background-color: aquamarine;
+   justify-content: space-between;
+ 
+}
+
+.mtopic{
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+
+
+.d-name {
+  display: block;
+  margin: 1rem 0 0.5rem;
+  font-size: 0.9rem;
+  color: #ced4da;
+}
+
+.sidebar-menu {
+  padding: 0 1rem;
+
+   
+ 
+}
+
+.sidebar-menu .sidebar-nav.flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  font-size: large;
+}
+
+.sidebar-link {
+  color: rgb(236, 239, 241);
+  padding: 15px;
+  margin: 4px 0;
+  border-radius: 20px;
+  transition: background 0.3s ease;
+}
+
+.sidebar-link:hover {
+  background-color: #c0c9d3;
+  padding-left: 20px;
+  height: 50px;
+}
+
+.sidebar-link.active {
+  background-color: #6c757d;
+  font-weight: bold;
+}
+
+.sidebar-footer {
+  padding: 1rem;
+  border-top: 0.5px solid #c7d5e0;
+}
+
+.sidebar-logout {
+  text-align: center;
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.sidebar-logout:hover {
+  background-color: #6c757d;
+  border-radius: 5px;
+}
+section{
+  background-color: #c6d2dc;
+}
+
+

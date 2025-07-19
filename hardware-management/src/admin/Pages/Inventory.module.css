@@ -1,0 +1,99 @@
+.inventorycontainer {
+  padding: 1rem;
+  color: white;
+}
+
+.inventoryheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.btnadditem {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.inventoryfilters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.inventorysearch,
+.inventoryselect {
+  padding: 0.4rem;
+  border-radius: 4px;
+  color: black;
+}
+
+.inventorytable table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #1f2937;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.inventorytable th,
+.inventorytable td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #374151;
+  text-align: left;
+}
+
+.badge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.instock {
+  background-color: #16a34a;
+  color: white;
+}
+
+.low {
+  background-color: #f59e0b;
+  color: white;
+}
+
+.out {
+  background-color: #dc2626;
+  color: white;
+}
+
+.btnreorder {
+  padding: 0.3rem 0.7rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.stockalert {
+  margin-bottom: 2rem;
+}
+
+.stockalert ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.alertname {
+  font-weight: bold;
+  color: #fbbf24;
+}
+
+.stockhistory {
+  margin-bottom: 2rem;
+}

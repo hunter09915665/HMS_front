@@ -1,0 +1,64 @@
+/* Base Light Theme */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode Overrides */
+body.dark {
+  background-color: #121212;
+  color: #f4f4f4;
+}
+
+/* Header Style */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s;
+}
+
+body.dark .header {
+  background-color: #1f1f1f;
+}
+
+/* Brand Style */
+.brandname {
+  font-size: 24px;
+  font-weight: bold;
+  color: inherit;
+}
+
+/* Dark Mode Button */
+.togglebtn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: inherit;
+  transition: transform 0.3s;
+}
+
+.togglebtn:hover {
+  transform: rotate(20deg);
+}
+
+/* Responsive (Optional for future) */
+@media (max-width: 600px) {
+  .brandname {
+    font-size: 20px;
+  }
+
+  .togglebtn {
+    font-size: 20px;
+  }
+}
